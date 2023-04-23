@@ -8,17 +8,12 @@ import BookPage from "./components/page/BookPage";
 class App extends React.Component {
   render() {
     return (
-      // <div>
-      //   <MainPage />
-      //   <SearchPage />
-      //   <BookPage />
-      // </div>
       <BrowserRouter>
         <Fragment>
           <Routes>
             <Route exact path="/" element={<MainPage />} />
-            <Route exact path="/search" element={<SearchPage />} />
-            <Route path="/book/:id" element={<BookPage />} />
+            <Route path="/search" element={<SearchPage />} />
+            <Route path="/book/:id" element={ <BookPage />} />
           </Routes>
         </Fragment>
       </BrowserRouter>
