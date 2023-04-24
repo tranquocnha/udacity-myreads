@@ -15,7 +15,7 @@ function BookPage() {
   }, [id]);
 
   const updateBook = (book, shelf) => {
-    BooksAPI.update(book, shelf).then((resp) => {
+    BooksAPI.update(book, shelf).then(() => {
       book.shelf = shelf;
       setBook(book);
     });
